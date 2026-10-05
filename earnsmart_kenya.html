@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EarnSmart Kenya — learn how to avoid online fraud, find legitimate online work, and turn simple skills into income.">
+<title>EarnSmart Kenya | Real Online Work & Scam Protection</title>
+<style>
+:root{
+  --ink:#10233f; --muted:#617089; --bg:#f6f9fc; --card:#fff;
+  --green:#13a36b; --blue:#2563eb; --orange:#f59e0b; --red:#dc3545;
+  --line:#e5ebf2; --shadow:0 14px 40px rgba(16,35,63,.09);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;font-size:1.25rem;display:flex;align-items:center;gap:9px}
+.logo span{background:linear-gradient(135deg,var(--green),var(--blue));color:white;padding:8px 10px;border-radius:12px}
+nav{display:flex;gap:22px;font-size:.94rem;font-weight:700}
+nav a:hover{color:var(--green)}
+.menu{display:none;background:none;border:0;font-size:1.5rem}
+.hero{padding:80px 0 60px;background:
+ radial-gradient(circle at 85% 20%,#dff7ec 0,transparent 28%),
+ radial-gradient(circle at 10% 20%,#e7efff 0,transparent 30%),white}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.badge{display:inline-flex;gap:7px;align-items:center;background:#e9f8f1;color:#08754b;padding:7px 12px;border-radius:999px;font-size:.82rem;font-weight:800}
+h1{font-size:clamp(2.35rem,6vw,4.5rem);line-height:1.02;margin:18px 0}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:0 0 12px}
+.lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;font-weight:800;border:1px solid transparent;cursor:pointer}
+.primary{background:var(--green);color:white}.secondary{background:white;border-color:var(--line)}
+.primary:hover{filter:brightness(.94)}
+.hero-card{background:var(--ink);color:white;border-radius:25px;padding:28px;box-shadow:var(--shadow)}
+.hero-card h3{margin-top:0;font-size:1.4rem}
+.check{display:flex;gap:10px;margin:15px 0}.check b{color:#62e5af}
+section{padding:76px 0}
+.section-head{max-width:700px;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 6px 24px rgba(16,35,63,.045)}
+.card h3{margin:10px 0 7px}
+.icon{font-size:2rem}
+.card p{color:var(--muted);margin-top:6px}
+.warning{background:#fff5f5;border:1px solid #ffd6d6;border-left:5px solid var(--red)}
+.warning h3{color:#a61e2b}
+.safe{background:#eefaf5;border:1px solid #cdeedf;border-left:5px solid var(--green)}
+.platforms{grid-template-columns:repeat(3,1fr)}
+.platform{display:flex;flex-direction:column;min-height:270px}
+.tag{display:inline-block;font-size:.75rem;font-weight:900;padding:5px 9px;border-radius:999px;background:#edf3ff;color:#2457b8;margin-bottom:8px}
+.platform .btn{margin-top:auto;width:100%}
+.steps{counter-reset:step}
+.step{position:relative;padding-left:62px}
+.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:white;font-weight:900}
+.skill{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid var(--line);padding:14px 0}
+.skill:last-child{border-bottom:0}
+.small{font-size:.86rem;color:var(--muted)}
+.tool{font-weight:800;color:var(--blue)}
+footer{background:#0c1a2e;color:#cbd5e1;padding:45px 0}
+footer h3{color:white}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}
+footer a{color:#dbeafe}.note{font-size:.8rem;color:#94a3b8;margin-top:25px}
+.fraud-list li{margin:10px 0}
+.cta{background:linear-gradient(135deg,#10233f,#174b62);color:white;border-radius:25px;padding:40px}
+.cta p{color:#d8e6ef}
+@media(max-width:800px){
+ nav{display:none}.menu{display:block}.hero-grid{grid-template-columns:1fr}.grid,.platforms{grid-template-columns:1fr}
+ section{padding:55px 0}.hero{padding-top:55px}.footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="logo" href="#top"><span>ES</span> EarnSmart Kenya</a>
+  <nav>
+   <a href="#fraud">Fraud</a><a href="#jobs">Jobs</a><a href="#skills">Skills</a><a href="#platforms">Platforms</a><a href="#start">Start</a>
+  </nav>
+  <button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').style.display=document.querySelector('nav').style.display==='flex'?'none':'flex'">☰</button>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <span class="badge">🇰🇪 Built for beginners in Kenya</span>
+   <h1>Learn. Work. Earn. <span style="color:var(--green)">Safely.</span></h1>
+   <p class="lead">A simple guide to spotting online fraud, finding legitimate online work, and turning everyday skills into real income — without fake “get rich quick” promises.</p>
+   <div class="actions">
+    <a class="btn primary" href="#start">Find your starting point →</a>
+    <a class="btn secondary" href="#fraud">Learn scam signs</a>
+   </div>
+  </div>
+  <div class="hero-card">
+   <h3>Our 3 rules</h3>
+   <div class="check"><b>✓</b><span>Never pay someone just to receive a job.</span></div>
+   <div class="check"><b>✓</b><span>Use official platform websites, not random recruiter links.</span></div>
+   <div class="check"><b>✓</b><span>Start small, build proof of work, then increase your rates.</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="fraud">
+ <div class="container">
+  <div class="section-head"><span class="badge">🛡️ Protect your money</span><h2>How to identify online fraud</h2><p class="lead">If an “opportunity” sounds too easy, slow down and verify it before sending money or personal information.</p></div>
+  <div class="grid">
+   <div class="card warning"><div class="icon">💸</div><h3>Pay first, earn later</h3><p>“Pay a registration, activation, training or withdrawal fee.” Legitimate jobs do not require you to pay someone to release wages.</p></div>
+   <div class="card warning"><div class="icon">📱</div><h3>Random WhatsApp/Telegram job</h3><p>Unexpected messages promising quick daily income are a major warning sign. Verify the company independently.</p></div>
+   <div class="card warning"><div class="icon">💰</div><h3>Guaranteed huge income</h3><p>Claims like “KES 10,000 every day with no experience” should make you stop and investigate.</p></div>
+   <div class="card warning"><div class="icon">🔐</div><h3>Requests for sensitive data</h3><p>Do not rush to send passwords, PINs, OTPs, card details or identity documents to an unverified recruiter.</p></div>
+   <div class="card warning"><div class="icon">🪙</div><h3>Crypto deposit to unlock work</h3><p>Task scams may show fake earnings and then demand your own money before you can withdraw. Walk away.</p></div>
+   <div class="card safe"><div class="icon">🔎</div><h3>Verify before you trust</h3><p>Search the company name with words such as “scam”, “review” or “complaint”, and visit the company's official site directly.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="jobs" style="background:white">
+ <div class="container">
+  <div class="section-head"><span class="badge">💼 Real online work</span><h2>What can a beginner actually do?</h2><p class="lead">You do not need to be an expert. You need one useful service, basic digital skills, consistency and a way to show your work.</p></div>
+  <div class="grid">
+   <div class="card"><div class="icon">⌨️</div><h3>Data entry</h3><p>Organise information in spreadsheets, copy information accurately and clean simple records.</p></div>
+   <div class="card"><div class="icon">🎨</div><h3>Simple designs</h3><p>Create flyers, social posts, menus and thumbnails with beginner-friendly design tools.</p></div>
+   <div class="card"><div class="icon">✍️</div><h3>Writing & editing</h3><p>Offer proofreading, captions, product descriptions, CV formatting and basic articles.</p></div>
+   <div class="card"><div class="icon">🎬</div><h3>Short video editing</h3><p>Trim clips, add captions, resize videos and create simple social-media edits.</p></div>
+   <div class="card"><div class="icon">📊</div><h3>Spreadsheet help</h3><p>Learn sorting, formatting, simple formulas and clean presentation in Excel or Google Sheets.</p></div>
+   <div class="card"><div class="icon">📱</div><h3>Social media assistance</h3><p>Schedule posts, write captions, organise content and help small businesses stay consistent.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="platforms">
+ <div class="container">
+  <div class="section-head"><span class="badge">🔗 Official links only</span><h2>Platforms worth checking</h2><p class="lead">These links go directly to the platforms. Availability, payment methods and job supply can change, so always confirm eligibility during signup.</p></div>
+  <div class="grid platforms">
+   <div class="card platform">
+    <span class="tag">Freelancing</span><h3>Upwork</h3><p>Find client projects in writing, design, IT, admin, marketing and many other categories. Free to create a freelancer profile; platform fees can apply to earnings.</p><a class="btn primary" href="https://www.upwork.com/" target="_blank" rel="noopener">Visit Upwork ↗</a>
+   </div>
+   <div class="card platform">
+    <span class="tag">Freelancing</span><h3>Fiverr</h3><p>List a service you can provide — for example design, writing, video editing, voice work or social media help — and let clients find you.</p><a class="btn primary" href="https://www.fiverr.com/" target="_blank" rel="noopener">Visit Fiverr ↗</a>
+   </div>
+   <div class="card platform">
+    <span class="tag">Microtasks</span><h3>Clickworker</h3><p>Offers various small online tasks. Registration and payment availability can depend on your country and current workload.</p><a class="btn primary" href="https://www.clickworker.com/" target="_blank" rel="noopener">Visit Clickworker ↗</a>
+   </div>
+  </div>
+  <div class="card" style="margin-top:20px;background:#fffaf0;border-color:#f6d98c">
+   <strong>⚠️ Important:</strong> We intentionally do not list Toloka or UserTesting as Kenya-ready earning options here. Toloka's current geographic restrictions list Kenya as restricted, while UserTesting says contributor eligibility depends on location and its current country information does not establish Kenya as a standard contributor market.
+  </div>
+ </div>
+</section>
+
+<section id="skills" style="background:white">
+ <div class="container">
+  <div class="section-head"><span class="badge">🧰 Start with what you have</span><h2>Simple tools → useful skills → income</h2></div>
+  <div class="grid">
+   <div class="card">
+    <h3>📱 Phone only</h3>
+    <div class="skill"><span>Canva</span><span class="tool">Design</span></div>
+    <div class="skill"><span>CapCut</span><span class="tool">Video</span></div>
+    <div class="skill"><span>Google Docs</span><span class="tool">Writing</span></div>
+    <div class="skill"><span>Google Sheets</span><span class="tool">Data</span></div>
+   </div>
+   <div class="card">
+    <h3>💻 Laptop</h3>
+    <div class="skill"><span>Excel / Sheets</span><span class="tool">Admin</span></div>
+    <div class="skill"><span>Docs / Word</span><span class="tool">Documents</span></div>
+    <div class="skill"><span>Simple web tools</span><span class="tool">Research</span></div>
+    <div class="skill"><span>Video editors</span><span class="tool">Content</span></div>
+   </div>
+   <div class="card">
+    <h3>🧠 Your first skill</h3>
+    <div class="skill"><span>Pick one service</span><span class="tool">Day 1</span></div>
+    <div class="skill"><span>Make 3 examples</span><span class="tool">Days 2–4</span></div>
+    <div class="skill"><span>Create a profile</span><span class="tool">Day 5</span></div>
+    <div class="skill"><span>Apply every day</span><span class="tool">Day 6+</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="start">
+ <div class="container">
+  <div class="cta">
+   <span class="badge" style="background:#d8f6ea">🚀 Beginner roadmap</span>
+   <h2 style="margin-top:14px">Your first 7 days</h2>
+   <div class="grid" style="margin-top:25px">
+    <div class="step"><h3>Choose one service</h3><p>Do not try to learn everything at once. Pick design, writing, data entry, video or social media assistance.</p></div>
+    <div class="step"><h3>Practice with free tools</h3><p>Make three small examples. Your first goal is proof that you can deliver useful work.</p></div>
+    <div class="step"><h3>Join an official platform</h3><p>Use the official links above. Complete your profile honestly and never buy a fake account.</p></div>
+   </div>
+   <div class="actions"><a class="btn primary" href="#platforms">See platforms →</a><a class="btn secondary" href="#fraud">Check scam signs</a></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-grid">
+  <div><h3>EarnSmart Kenya</h3><p>A beginner-friendly guide to safer online work. The goal is not instant wealth — it is learning a useful skill, finding real clients and protecting your money.</p></div>
+  <div><h3>Explore</h3><p><a href="#fraud">Fraud protection</a></p><p><a href="#jobs">Online work</a></p><p><a href="#platforms">Platforms</a></p></div>
+  <div><h3>Safety</h3><p><a href="https://consumer.ftc.gov/jobscams" target="_blank" rel="noopener">FTC job-scam guidance ↗</a></p><p><a href="https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams" target="_blank" rel="noopener">Task-scam guidance ↗</a></p></div>
+ </div>
+ <div class="container note">Information is educational, not a promise of income. Earnings depend on skill, demand, location, platform rules and the work you obtain. Always verify current eligibility and payment options directly with each platform.</div>
+</footer>
+</body>
+</html>
